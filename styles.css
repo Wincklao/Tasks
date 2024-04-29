@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "../imgs/game_over.ttf";
+    outline: none;
+}
+
+img {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.task:hover img{
+    opacity: 1;
+}
+.container {
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 150px 613px ;
+    width: 500px;
+}
+
+body {
+    background: url("../imgs/paisagem.png");
+}
+
+.input-task {
+    border: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.button-add-task{
+    background-image: linear-gradient(to right, purple, blue);
+    border: none;
+    border-radius: 5px;
+    padding: 7px 20px;
+    float: right;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.button-add-task:hover{
+    opacity: 0.8;
+}
+
+.button-add-task:active{
+    opacity: 0.6;
+}
+
+.input-task:active{
+    opacity: 0.8;
+}
+
+.list-tasks {
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    box-shadow: 1px 4px 10px rgba(0, 37, 247, 0.466);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
